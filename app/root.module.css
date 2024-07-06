@@ -8,6 +8,7 @@ html, body {
 
 body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -33,6 +34,16 @@ nav {
   align-items: center;
 }
 
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.p1 {
+  padding-left: 1rem;
+}
+
 .navitem {
   display: flex;
   align-items: center;
@@ -40,7 +51,31 @@ nav {
   width: 25%;
   height: 100%;
   font-size: large;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
   text-align: center;
   color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: start;
+}
+
+.content {
+  margin-top: 2rem;
+  height: 80%;
+  width: 95%;
+  border: solid #6d6d6d 1px;
+  background-color: #3C3C3C;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: larger;
+  text-wrap: wrap;
+  text-align: start;
 }
