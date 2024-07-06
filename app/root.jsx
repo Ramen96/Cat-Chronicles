@@ -6,6 +6,8 @@ import {
   LiveReload
 } from "@remix-run/react";
 
+import styles from "./root.module.css";
+
 export default function App() {
   return (
     <html>
@@ -17,8 +19,23 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <h1>Hello world!</h1>
+      <body className={styles.body}>
+          <section>
+            <nav>
+              <div className={styles.navitem}>
+                <p>Home</p>
+              </div>
+              <div className={styles.navitem}>
+                <p>Cat Chronicles</p>
+              </div>
+              <div className={styles.navitem}>
+                <p>Cat info</p>
+              </div>
+              <div className={styles.navitem}>
+                <p>About</p>
+              </div>
+            </nav>
+          </section>
         <Outlet />
 
         <Scripts />
