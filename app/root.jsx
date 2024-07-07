@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 
 import styles from "./root.module.css";
+import chani1 from "./assets/chani1.jpg";
 
 export default function App() {
   return (
@@ -38,17 +39,11 @@ export default function App() {
             </nav>
           </section>
           <div className={styles.container}>
-            <div className={styles.content}>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
-              <p className={styles.p1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas excepturi quaerat fuga eum libero reprehenderit exercitationem culpa temporibus? Cupiditate magni doloremque magnam deleniti consequuntur sequi quod sunt necessitatibus nulla.</p>
+              <div className={styles.content}>
+                <p className={styles.p1}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum sapiente quisquam temporibus, provident culpa maxime a, architecto omnis ad eos animi magni harum voluptatem doloremque impedit quae nam ipsum.</p>
+                <img src={chani1} alt="cat" />
+              </div>
             </div>
-          </div>
         </div>
         <Outlet />
 

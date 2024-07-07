@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color:  #28282B;
+  background-color:  #000000;
 }
 
 body {
@@ -15,16 +15,14 @@ body {
 section {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 65%;
   height: 4rem;
+  border-bottom: solid #6d6d6d 1px;
 }
 
 nav {
   width: 95%;
   height: 100%;
-  background-color: #3C3C3C;
-  border: solid #6d6d6d 1px;
-  border-radius: 0.5rem;
   margin: 10px;
 }
 
@@ -40,8 +38,16 @@ a {
   text-decoration: none;
 }
 
+img {
+  border-radius: 9rem;
+  width: 100%;
+  height: auto;
+}
+
 .p1 {
   padding-left: 1rem;
+  text-align: start;
+  max-width: 100%;
 }
 
 .navitem {
@@ -63,19 +69,20 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 80%;
   align-items: start;
 }
 
 .content {
   margin-top: 2rem;
-  height: 80%;
-  width: 95%;
-  border: solid #6d6d6d 1px;
-  background-color: #3C3C3C;
+  height: 60%;
+  width: 65%;
   border-radius: 0.5rem;
   color: white;
   font-size: larger;
   text-wrap: wrap;
   text-align: start;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
