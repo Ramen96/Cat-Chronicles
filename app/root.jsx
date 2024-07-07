@@ -19,9 +19,10 @@ import chani1 from "./assets/chani2.png";
 export default function App() {
   const animatedText = useRef();
   useGSAP(() => {
-    gsap.from(animatedText.current, {
-    duration: 2,
-    text: "This is the new text",
+    gsap.to(animatedText.current, {
+    duration: 10,
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum sapiente quisquam temporibus, provident culpa maxime a, architecto omnis ad eos animi magni harum voluptatem doloremque impedit quae nam ipsum.",
+    delay: 1,
     ease: "none",
    });
   })
@@ -56,7 +57,7 @@ export default function App() {
           </section>
           <div className={styles.container}>
               <div className={styles.content}>
-                <p ref={animatedText} className={styles.p1}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum sapiente quisquam temporibus, provident culpa maxime a, architecto omnis ad eos animi magni harum voluptatem doloremque impedit quae nam ipsum.</p>
+                <p ref={animatedText} className={styles.p1}> </p>
                 <img src={chani1} alt="cat" />
               </div>
             </div>
