@@ -20,10 +20,12 @@ export default function App() {
   const animatedText = useRef();
   useGSAP(() => {
     gsap.to(animatedText.current, {
-    duration: 6,
+    duration: 10,
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum sapiente quisquam temporibus, provident culpa maxime a, architecto omnis ad eos animi magni harum voluptatem doloremque impedit quae nam ipsum.",
     delay: 1,
     ease: "none",
+    yoyo: true,
+    repeat: 2,
    });
   })
 
