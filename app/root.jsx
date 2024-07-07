@@ -7,7 +7,7 @@ import {
 } from "@remix-run/react";
 
 import styles from "./root.module.css";
-import chani1 from "./assets/chani1.jpg";
+import chani1 from "./assets/chani2.png";
 
 export default function App() {
   return (
