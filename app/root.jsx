@@ -6,10 +6,26 @@ import {
   LiveReload
 } from "@remix-run/react";
 
+import { gsap } from "gsap/dist/gsap";    
+import { TextPlugin } from "gsap/dist/TextPlugin";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(TextPlugin);
+
 import styles from "./root.module.css";
 import chani1 from "./assets/chani2.png";
 
 export default function App() {
+  const animatedText = useRef();
+  useGSAP(() => {
+    gsap.from(animatedText.current, {
+    duration: 2,
+    text: "This is the new text",
+    ease: "none",
+   });
+  })
+
   return (
     <html>
       <head>
@@ -40,7 +56,7 @@ export default function App() {
           </section>
           <div className={styles.container}>
               <div className={styles.content}>
-                <p className={styles.p1}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum sapiente quisquam temporibus, provident culpa maxime a, architecto omnis ad eos animi magni harum voluptatem doloremque impedit quae nam ipsum.</p>
+                <p ref={animatedText} className={styles.p1}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum sapiente quisquam temporibus, provident culpa maxime a, architecto omnis ad eos animi magni harum voluptatem doloremque impedit quae nam ipsum.</p>
                 <img src={chani1} alt="cat" />
               </div>
             </div>
