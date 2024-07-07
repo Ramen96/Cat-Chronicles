@@ -15,9 +15,11 @@ body {
 section {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 65%;
   height: 4rem;
   border-bottom: solid #6d6d6d 1px;
+  margin: 5px;
 }
 
 nav {
@@ -33,9 +35,11 @@ nav {
 }
 
 a {
-  color: white;
+  color: #b1b1b1;
   cursor: pointer;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 img {
@@ -60,7 +64,16 @@ img {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   text-align: center;
-  color: white;
+  margin: 5px;
+}
+
+.navitem:hover {
+  background-color: #2b2a2a;
+  border-radius: 3rem;
+  height: 70%;
+  border: solid #6d6d6d 1px;
+  cursor: pointer;
+  margin: 5pxs;
 }
 
 .container {
@@ -78,7 +91,7 @@ img {
   height: 60%;
   width: 65%;
   border-radius: 0.5rem;
-  color: white;
+  color: #b1b1b1;
   font-size: larger;
   text-wrap: wrap;
   text-align: start;
