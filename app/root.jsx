@@ -10,22 +10,20 @@ import { gsap } from "gsap/dist/gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(TextPlugin);
-
 import styles from "./root.module.css";
 import chani1 from "./assets/chani2.png";
 
+gsap.registerPlugin(TextPlugin);
+
 export default function App() {
+
   const animatedText = useRef();
   useGSAP(() => {
     gsap.to(animatedText.current, {
     duration: 10,
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum sapiente quisquam temporibus, provident culpa maxime a, architecto omnis ad eos animi magni harum voluptatem doloremque impedit quae nam ipsum.",
     delay: 1,
-    ease: "none",
-    yoyo: true,
-    repeat: 2,
+    ease: "none"
    });
   })
 
