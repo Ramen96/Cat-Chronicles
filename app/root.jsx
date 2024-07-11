@@ -41,18 +41,18 @@ export default function App() {
         <div className={styles.container}>
           <section>
             <nav>
-              <div className={styles.navitem}>
-                <p><a href="#">Home</a></p>
-              </div>
-              <div className={styles.navitem}>
-                <p><a href="#">Cat Chronicles</a></p>
-              </div>
-              <div className={styles.navitem}>
-                <p><a href="#">Learn</a></p>
-              </div>
-              <div className={styles.navitem}>
-                <p><a href="#">About</a></p>
-              </div>
+              <button className={styles.navitem}>
+                <p>Home</p>
+              </button>
+              <button className={styles.navitem}>
+                <p>Cat Chronicles</p>
+              </button>
+              <button className={styles.navitem}>
+                <p>Learn</p>
+              </button>
+              <button className={styles.navitem}>
+                <p>About</p>
+              </button>
             </nav>
           </section>
           <div className={styles.container}>
