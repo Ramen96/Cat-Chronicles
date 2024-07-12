@@ -3,7 +3,7 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import styles from "../css/root.module.css";
-import chani1 from "../assets/chani1.jpg";
+import chani1 from "../assets/chani2.png";
 
 import Nav from "../components/nav";
 
