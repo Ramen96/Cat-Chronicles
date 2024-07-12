@@ -5,16 +5,16 @@ export default function Nav() {
     <section>
       <nav>
         <button className={styles.navitem}>
-          <p>Home</p>
+          <a href="/">Home</a>
         </button>
         <button className={styles.navitem}>
-          <p>Cat Chronicles</p>
+          <a href="./cat-chronicles">Cat Chronicles</a>
         </button>
         <button className={styles.navitem}>
-          <p>Learn</p>
+          <a href="./learn">Learn</a>
         </button>
         <button className={styles.navitem}>
-          <p>About</p>
+          <a href="./about">About</a>
         </button>
       </nav>
     </section>
