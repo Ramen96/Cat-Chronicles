@@ -12,28 +12,6 @@ body {
   justify-content: center;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 65%;
-  height: 4rem;
-  border-bottom: solid #6d6d6d 1px;
-  margin: 5px;
-}
-
-nav {
-  width: 95%;
-  height: 100%;
-  margin: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -48,30 +26,6 @@ img {
   font-weight: bolder;
   color: #9bff0593;
   text-shadow: 1px 1px 20px #9bff05;
-}
-
-.navitem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 100%;
-  font-size: large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  margin: 5px;
-  color: #b1b1b1;
-  background-color: #000000;
-  border: none;
-}
-
-.navitem:hover {
-  background-color: #2b2a2a;
-  border-radius: 3rem;
-  height: 70%;
-  border: solid #6d6d6d 1px;
-  cursor: pointer;
 }
 
 .container {
