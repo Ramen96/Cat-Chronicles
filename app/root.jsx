@@ -7,7 +7,7 @@ import {
 
 import { gsap } from "gsap/dist/gsap";    
 import { TextPlugin } from "gsap/dist/TextPlugin";
-import styles from "./css/root.module.css";
+import styles from "./root.module.css";
 
 gsap.registerPlugin(TextPlugin);
 

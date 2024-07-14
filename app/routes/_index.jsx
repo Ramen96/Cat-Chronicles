@@ -2,10 +2,10 @@ import { gsap } from "gsap/dist/gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import styles from "../css/root.module.css";
+import styles from "../root.module.css";
 import chani1 from "../assets/chani2.png";
 
-import Nav from "../components/nav";
+import Nav from "../components/nav/nav";
 
 gsap.registerPlugin(TextPlugin);
 
