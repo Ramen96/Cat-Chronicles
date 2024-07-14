@@ -2,8 +2,7 @@ import {
   Links,
   Meta,
   Outlet,
-  Scripts,
-  LiveReload
+  Scripts
 } from "@remix-run/react";
 
 import { gsap } from "gsap/dist/gsap";    
@@ -27,7 +26,6 @@ export default function App() {
         <Outlet />
 
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );
