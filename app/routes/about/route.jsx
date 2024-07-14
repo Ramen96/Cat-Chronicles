@@ -5,8 +5,9 @@ export default function About() {
   return(
     <>
       <Nav />
-      <div className={styles.container}>
-      </div>
+      <main>
+        
+      </main>
     </>
     
   )
