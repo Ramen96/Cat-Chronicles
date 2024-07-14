@@ -2,16 +2,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 100%;
   height: 4rem;
-  border-bottom: solid #6d6d6d 1px;
   margin: 5px;
 }
 
 nav {
-  width: 95%;
+  width: 65%;
   height: 100%;
   margin: 10px;
+  border-bottom: solid #6d6d6d 1px;
 }
 
 nav {
