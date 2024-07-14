@@ -1,8 +1,15 @@
 import Nav from "../components/nav";
 
-export default function() {
+import styles from "../css/module.about.css";
+
+export default function about() {
   return(
-    <Nav />
+    <>
+      <Nav />
+      <div className={styles.container}>
+        <p>Hello World</p>
+      </div>
+    </>
     
   )
 }
