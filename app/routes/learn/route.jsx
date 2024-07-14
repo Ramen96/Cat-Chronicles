@@ -1,6 +1,6 @@
 import Nav from "../../components/nav/nav";
 
-export default function() {
+export default function Learn() {
   return(
     <Nav />
     
