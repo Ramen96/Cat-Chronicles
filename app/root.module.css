@@ -32,7 +32,7 @@ img {
   padding: 3rem;
 }
 
-.p::-webkit-scrollbar {
+.p1::-webkit-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   scroll-behavior: smooth;
