@@ -13,7 +13,7 @@ body {
   justify-content: center;
 }
 
-img {
+.chani1 {
   width: 45rem;
   height: auto;
 }
@@ -48,9 +48,19 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 99%;
   height: 80%;
   align-items: start;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.space {
+  background-image: url("app/assets/space.jpg");
+  width: 100%;
+  height: auto;
 }
 
 .content {
