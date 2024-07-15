@@ -4,7 +4,6 @@ html, body {
   margin: 0px;
   padding: 0px;
   background-color:  #000000;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -35,12 +34,10 @@ img {
 .p::-webkit-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  scroll-behavior: smooth;
 }
 
 .p1::-webkit-scrollbar {
   display: none;
-  scroll-behavior: smooth;
 }
 
 .container {
