@@ -46,8 +46,8 @@ a {
   text-align: center;
   margin: 5px;
   color: #b1b1b1;
-  background-color: #0be4d973;
-  border: none;
+  background-color: #000000c5;
+  border: solid rgba(255, 255, 255, 0.616) 1px;
   border-radius: 3rem;
 }
 
