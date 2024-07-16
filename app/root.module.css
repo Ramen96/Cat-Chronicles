@@ -7,6 +7,9 @@ html, body {
   scroll-behavior: smooth;
 }
 
+h1 {
+  color: white;
+}
 body {
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +21,39 @@ body {
   height: auto;
 }
 
-.p1 {
+.containerA {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgImg {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  height: 80%;
+  align-items: start;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+}
+
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .p1 {
   width: 100%;
   height: 150%;
   text-align: center;
@@ -30,7 +65,7 @@ body {
   overflow-y: scroll;
   margin: 3rem;
   padding: 3rem;
-}
+} */
 
 .p1::-webkit-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
@@ -43,7 +78,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -51,13 +86,9 @@ body {
   width: 99%;
   height: 80%;
   align-items: start;
-}
+} */
 
-.space {
-  background-image: url("assets/chani2.png");
-}
-
-.content {
+/* .content {
   margin-top: 2rem;
   height: 80%;
   width: 100%;
@@ -73,10 +104,4 @@ body {
   left: 50%;
   top: 38%;
   transform: translate(-50%, -50%);
-}
-
-.testtest {
-  width: 100%;
-  background-image: url("/app/assets/space.avif");
-  width: auto;
-}
+} */

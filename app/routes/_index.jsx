@@ -22,8 +22,14 @@ export default function Index() {
   })
 
   return(
-    <div className={styles.space} >
-
-    </div>
+    <>
+      <Nav />
+      <div className={styles.containerA} >
+        <img className={styles.bgImg} src={space} alt="space" />
+        <main className={styles.main}>
+          <h1>Test</h1>
+        </main>
+      </div>
+    </>
   )
 }
