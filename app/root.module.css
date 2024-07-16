@@ -51,16 +51,10 @@ body {
   width: 99%;
   height: 80%;
   align-items: start;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .space {
-  background-image: url("app/assets/space.jpg");
-  width: 100%;
-  height: auto;
+  background-image: url("assets/chani2.png");
 }
 
 .content {
@@ -75,4 +69,14 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.testtest {
+  width: 100%;
+  background-image: url("/app/assets/space.avif");
+  width: auto;
 }

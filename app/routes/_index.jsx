@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 import styles from "../root.module.css";
 import chani1 from "../assets/chani2.png";
-import space from "../assets/space.jpg";
+import space from "../assets/space.avif";
 import Nav from "../components/nav/nav";
 
 gsap.registerPlugin(TextPlugin);
@@ -22,15 +22,8 @@ export default function Index() {
   })
 
   return(
-    <div className={styles.container}>
-      <img className={styles.space} src={space} alt="space" />
-      <Nav />
-      <div className={styles.container}>
-          <div className={styles.content}>
-            <p ref={animatedText} className={styles.p1}></p>
-            <img className={styles.chani1} src={chani1} alt="cat" />
-          </div>
-        </div>
+    <div className={styles.space} >
+
     </div>
   )
 }
