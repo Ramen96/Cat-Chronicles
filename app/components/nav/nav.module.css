@@ -5,11 +5,7 @@ section {
   width: 99%;
   height: 4rem;
   margin: 5px;
-  margin-top: 3rem;
-  position: absolute;
-  left: 50%;
-  top: 0%;
-  transform: translate(-50%, -50%);
+  margin-top: 1rem;
 }
 
 nav {
