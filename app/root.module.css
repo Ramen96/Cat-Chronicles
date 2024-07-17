@@ -30,9 +30,20 @@ body {
 
 .containerA {
   width: 100%;
+  height: 100%i;
   display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.containerB {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 99%;
+  height: 80%;
+  align-items: start;
 }
 
 .bgImg {
@@ -58,7 +69,7 @@ body {
 
 .textA {
   width: 100%;
-  height: 150%;
+  height: 37rem;
   text-align: center;
   font-size: 400%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -80,31 +91,3 @@ body {
   display: none;
   scroll-behavior: smooth;
 }
-
-.containerB {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 99%;
-  height: 80%;
-  align-items: start;
-}
-
-/* .content {
-  margin-top: 2rem;
-  height: 80%;
-  width: 100%;
-  border-radius: 0.5rem;
-  color: #b1b1b1;
-  font-size: larger;
-  text-wrap: wrap;
-  text-align: start;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: absolute;
-  left: 50%;
-  top: 38%;
-  transform: translate(-50%, -50%);
-} */

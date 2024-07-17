@@ -28,7 +28,7 @@ export default function Index() {
         <main className={styles.main}>
           <div className={styles.containerB}>
             <p ref={animatedText} className={styles.textA}></p>
-            <div className={styles.containerA}>
+            <div className={styles.containerB}>
               <div className={styles.chani1}></div>
             </div>
           </div> 
