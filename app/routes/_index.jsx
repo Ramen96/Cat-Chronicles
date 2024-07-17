@@ -28,8 +28,8 @@ export default function Index() {
         <main className={styles.main}>
           <div className={styles.containerB}>
             <p ref={animatedText} className={styles.textA}></p>
-            <div className={styles.imgContainer}>
-              <img className={styles.chani1} src={chani1} alt="cat" /> 
+            <div className={styles.containerA}>
+              <div className={styles.chani1}></div>
             </div>
           </div> 
         </main>
