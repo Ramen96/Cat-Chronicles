@@ -34,6 +34,7 @@ body {
   height: auto;
   background-image: linear-gradient(to bottom, transparent, black),
     url("./assets/space.avif");
+  background-size: 50%;
 }
 
 .main {
