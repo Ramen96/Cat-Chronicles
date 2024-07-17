@@ -22,10 +22,10 @@ export default function Index() {
   })
 
   return(
-    <>
+    <div className={styles.bgImg}>
       <Nav />
       <div className={styles.containerA} >
-        <img className={styles.bgImg} src={space} alt="space" />
+        {/* <img className={styles.bgImg} src={space} alt="space" /> */}
         <main className={styles.main}>
           <div className={styles.containerB}>
             <p ref={animatedText} className={styles.textA}></p>
@@ -35,6 +35,6 @@ export default function Index() {
           </div> 
         </main>
       </div>
-    </>
+    </div>
   )
 }
