@@ -13,7 +13,7 @@ export default function Index() {
   useGSAP(() => {
     gsap.to(animatedText.current, {
     duration: 3,
-    text: "Chani's Cosmic Chronicles: A Tail of Feline Fun in the Final Frontier!",
+    text: "Chani's Cosmic Chronicles: A Voyage of Feline Fun in the Final Frontier!",
     delay: 0.5,
     ease: "none"
    });
