@@ -4,8 +4,6 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
 import styles from "../root.module.css";
-// import chani1 from "../assets/chani2.png";
-// import space from "../assets/space.avif";
 import Nav from "../components/nav/nav";
 
 gsap.registerPlugin(TextPlugin);
