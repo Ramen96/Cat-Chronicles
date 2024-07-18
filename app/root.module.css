@@ -106,4 +106,6 @@ body {
   color: #05f7ff;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 175%;
+  font-weight: lighter;
+  letter-spacing: 3px;
 }
