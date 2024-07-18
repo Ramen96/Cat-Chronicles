@@ -13,7 +13,7 @@ section {
 }
 
 nav {
-  width: 65%;
+  width: auto;
   height: 100%;
   margin: 10px;
 }
@@ -38,24 +38,23 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 10;
   height: 75%;
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   text-align: center;
-  margin: 5px;
+  letter-spacing: 3px;
+  margin: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   color: #b1b1b1;
   background-color: #000000c5;
   border: solid rgba(255, 255, 255, 0.616) 1px;
-  border-radius: 3rem;
+  border-radius: 0.5rem;
 }
 
 .navitem:hover {
   background-color: #2b2a2a;
-  border-radius: 3rem;
-  height: 85%;
-  border: solid #6d6d6d 1px;
   cursor: pointer;
-  padding: 1rem;
 }
