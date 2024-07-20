@@ -6,8 +6,7 @@ section {
   height: 4rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: solid #6d6d6d 1px;
-  background-color: rgba(12, 12, 12, 0.61);
+  background-color: rgba(12, 12, 12, 0.37);
   position: sticky;
   top: 0;
   backdrop-filter: invert(100%);
@@ -51,7 +50,7 @@ a {
   padding-right: 2rem;
   color: #b1b1b1;
   background-color: #000000c5;
-  border: solid rgba(255, 255, 255, 0.616) 1px;
+  border: solid rgb(0, 0, 0) 1px;
   border-radius: 0.5rem;
 }
 
