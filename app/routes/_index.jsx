@@ -32,6 +32,20 @@ export default function Index() {
               <p className={styles.textB}>With paws that have walked the stars and a purr that can soothe even the deepest of black holes, Chani invites you to explore the quirky, the fun, and the absolutely pawsome side of life.</p>
               <p className={styles.textB}>Whether you're a cat lover, a space enthusiast, or just someone looking for a good laugh, Chani's got you covered. So buckle up, grab your favorite catnip, and get ready to blast off into a world where every day is a new adventure and every meow is a masterpiece!</p> 
             </div>
+            <div className={styles.containerB}>
+              <div className={styles.cardA}>
+                <div className={styles.cardAConA}>
+                  <div className={styles.cardAsubA}>
+                    <div className={styles.cardAsubB}>
+
+                    </div>
+                    <div className={styles.cardAsubB}>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div> 
         </main>
       </div>
