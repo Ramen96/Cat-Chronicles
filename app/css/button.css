@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10;
-  height: 75%;
+  height: 50%;
+  width: inherit;
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
@@ -31,4 +31,8 @@
 .button:hover {
   background-color: #131313;
   cursor: pointer;
+  padding: 0.5rem;
+  width: inherit;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
