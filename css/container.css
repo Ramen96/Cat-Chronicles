@@ -1,0 +1,29 @@
+.containerA {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  scrollbar-width: none;
+}
+
+.containerB {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  height: auto;
+  align-items: start;
+}
+
+.containerC {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
+}

@@ -1,0 +1,7 @@
+.bgImg {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom, transparent, black),
+    url("../app/assets/space.avif");
+  background-size: 50%;
+}
