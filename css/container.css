@@ -11,6 +11,11 @@
   scrollbar-width: none;
 }
 
+.conAPosition {
+  position: absolute;
+  top: 0px;
+}
+
 .containerB {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +24,7 @@
   width: 99%;
   height: auto;
   align-items: start;
+  z-index: 0;
 }
 
 .containerC {

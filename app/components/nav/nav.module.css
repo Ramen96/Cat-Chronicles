@@ -10,6 +10,7 @@ section {
   position: sticky;
   top: 0;
   backdrop-filter: invert(100%);
+  z-index: 5;
 }
 
 nav {

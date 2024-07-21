@@ -1,9 +1,10 @@
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color:  #000000;
+  background-color: #000000;
   scroll-behavior: smooth;
   scrollbar-color: rgb(136, 136, 136) rgba(255, 166, 0, 0);
 }
@@ -14,8 +15,6 @@ body {
   justify-content: center;
 }
 
-
-
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +24,6 @@ body {
   height: 80%;
   align-items: start;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
 }
-
