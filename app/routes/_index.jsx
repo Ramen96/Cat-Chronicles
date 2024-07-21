@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
 import Nav from "../components/nav/nav";
+import chaniGrinch from "../assets/ChaniGrinch.jpg";
 
 import "../root.css";
 import "../css/container.css";
@@ -60,13 +61,15 @@ export default function Index() {
                 <div className="cardAConA">
                   <div className="cardAsubA">
                     <div className="cardAsubB">
-                      <p className="textB">
-                        This Section is a place holder for a brife profile aobut
-                        Chani
-                      </p>
+                      <img
+                        className="chaniGrinch"
+                        src={chaniGrinch}
+                        alt="Chani Grinch"
+                      ></img>
                     </div>
                     <div className="cardAsubB">
-                      <p className="textB">Bio section</p>
+                      <h1 className="textB fontBold">Chani:</h1>
+                      <p className="textB">lorem ipsum</p>
                     </div>
                   </div>
                 </div>
