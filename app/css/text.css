@@ -20,6 +20,14 @@
   letter-spacing: 3px;
 }
 
+.textC {
+  color: #05f7ff;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 150%;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
 .fontBold {
   font-weight: bold;
 }

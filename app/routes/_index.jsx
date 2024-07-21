@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 import Nav from "../components/nav/nav";
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
+import chaniBox from "../assets/chaniBox.jpg";
 
 import "../root.css";
 import "../css/container.css";
@@ -12,6 +13,7 @@ import "../css/card.css";
 import "../css/text.css";
 import "../css/background.css";
 import "../css/assets.css";
+import "../css/button.css";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -28,8 +30,8 @@ export default function Index() {
 
   return (
     <>
+      <Nav />
       <div className="container0">
-        <Nav />
         <div className="containerA conAPosition">
           <main className="main">
             <div className="containerB bgImg">
@@ -63,13 +65,28 @@ export default function Index() {
                     <div className="cardAsubB">
                       <img
                         className="chaniGrinch"
-                        src={chaniGrinch}
-                        alt="Chani Grinch"
+                        src={chaniBox}
+                        alt="Chani Box"
                       ></img>
+                      <a className="a" href="/about">
+                        <button className="button">
+                          <h1 className="textB">Read More</h1>
+                        </button>
+                      </a>
                     </div>
                     <div className="cardAsubB">
-                      <h1 className="textB fontBold">Chani:</h1>
-                      <p className="textB">lorem ipsum</p>
+                      <h1 className="textB fontBold">Chani</h1>
+                      <p className="textC">
+                        Meet Chani, the resilient feline who found her forever
+                        home on the side of the road. Rescued on September 4th,
+                        2022, Chani had a rough start with a broken leg and hip.
+                        But after six months of love and care, she made a full
+                        recovery and now enjoys a playful life filled with
+                        coding sessions, video games, and cuddles with her
+                        canine companion, Buddy. Despite her shyness, Chani's
+                        adventurous spirit and affectionate nature make her a
+                        beloved member of the family.
+                      </p>
                     </div>
                   </div>
                 </div>
