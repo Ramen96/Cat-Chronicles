@@ -26,6 +26,7 @@ export default function Index() {
   })
 
   return(
+  <>
     <div className="bgImg">
       <Nav />
       <div className="containerA" >
@@ -46,7 +47,7 @@ export default function Index() {
           <div className="cardAConA">
             <div className="cardAsubA">
               <div className="cardAsubB">
-
+                <p className="textB">This Section is a place holder for a brife profile aobut Chani</p>
               </div>
               <div className="cardAsubB">
 
@@ -55,6 +56,22 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <div className="containerB">
+        <div className="cardA">
+          <p className="textB">Placeholder for preview of Learn page</p>
+        </div>
+      </div>
+      <div className="containerB">
+        <div className="cardA">
+          <p className="textB">Placehoder for sneekpeak/screenshot of game</p>
+        </div>
+      </div>
+      <div className="containerB">
+        <div className="cardA">
+          <p className="textB">Placeholder for Call to action for users to keep exploring the site</p>
+        </div>
+      </div>
     </div>
+  </>
   )
 }

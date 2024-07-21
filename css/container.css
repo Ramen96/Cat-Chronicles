@@ -1,9 +1,14 @@
+.container0 {
+  width: 100%;
+  height: auto;
+
+}
+
 .containerA {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: start;
   scrollbar-width: none;
 }
 
