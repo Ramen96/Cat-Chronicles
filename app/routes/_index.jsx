@@ -3,14 +3,14 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
-import styles from "../root.module.css";
 import Nav from "../components/nav/nav";
 
-import "../../css/container.css";
-import "../../css/card.css";
-import "../../css/text.css";
-import "../../css/background.css";
-import "../../css/assets.css";
+import "../root.css";
+import "../css/container.css";
+import "../css/card.css";
+import "../css/text.css";
+import "../css/background.css";
+import "../css/assets.css";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -30,7 +30,7 @@ export default function Index() {
       <div className="container0">
         <Nav />
         <div className="containerA conAPosition">
-          <main className={styles.main}>
+          <main className="main">
             <div className="containerB bgImg">
               <p ref={animatedText} className="textA"></p>
               <div className="chani1"></div>
@@ -55,7 +55,6 @@ export default function Index() {
                 </p>
               </div>
             </div>
-
             <div className="containerB">
               <div className="cardA">
                 <div className="cardAConA">
