@@ -27,9 +27,9 @@ export default function Index() {
 
   return(
   <>
-    <div className="bgImg">
+    <div className="container0">
       <Nav />
-      <div className="containerA" >
+      <div className="containerA bgImg">
         <main className={styles.main}>
           <div className="containerB">
             <p ref={animatedText} className="textA"></p>
