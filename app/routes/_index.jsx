@@ -75,15 +75,15 @@ export default function Index() {
                       </a>
                     </div>
                     <div className="cardAsubB">
-                      <h1 className="textB fontBold">Chani</h1>
+                      <h1 className="textB fontBold">Meet Chani,</h1>
                       <p className="textC">
-                        Meet Chani, the resilient feline who found her forever
-                        home on the side of the road. Rescued on September 4th,
-                        2022, Chani had a rough start with a broken leg and hip.
-                        But after six months of love and care, she made a full
-                        recovery and now enjoys a playful life filled with
-                        coding sessions, video games, and cuddles with her
-                        canine companion, Buddy. Despite her shyness, Chani's
+                        the resilient feline who found her forever home on the
+                        side of the road. Rescued on September 4th, 2022, Chani
+                        had a rough start with a broken leg and hip. But after
+                        six months of love and care, she made a full recovery
+                        and now enjoys a playful life filled with coding
+                        sessions, video games, and cuddles with her canine
+                        companion, Buddy. Despite her shyness, Chani's
                         adventurous spirit and affectionate nature make her a
                         beloved member of the family.
                       </p>
