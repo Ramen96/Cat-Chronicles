@@ -51,7 +51,7 @@ a {
   padding-right: 2rem;
   color: #b1b1b1;
   background-color: #000000c5;
-  border: solid rgb(0, 0, 0) 1px;
+  border: none;
   border-radius: 0.5rem;
 }
 
