@@ -1,8 +1,8 @@
 import Nav from "../../components/nav/nav";
 import styles from "./about.module.css";
 
-import chaniGrinch from "../assets/ChaniGrinch.jpg";
-import chaniBox from "../assets/chaniBox.jpg";
+import chaniGrinch from "../../assets/ChaniGrinch.jpg";
+import chaniBox from "../../assets/chaniBox.jpg";
 
 import "../../root.css";
 import "../../css/container.css";
