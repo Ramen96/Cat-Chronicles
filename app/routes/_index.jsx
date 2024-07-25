@@ -64,7 +64,7 @@ export default function Index() {
                   <div className="cardAsubA">
                     <div className="cardAsubB">
                       <img
-                        className="chaniGrinch"
+                        className="chani1"
                         src={chaniBox}
                         alt="Chani Box"
                       ></img>
