@@ -22,6 +22,11 @@ export default function About() {
             <div className="containerB bgImg">
               <div className="containerD">
                 <h1 className="textA">Meet Chani,</h1>
+                <img
+                  className="chaniGrinch"
+                  src={chaniGrinch}
+                  alt="chani grinch"
+                ></img>
               </div>
               <div className="containerD">
                 <div className="containerC">
