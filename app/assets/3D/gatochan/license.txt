@@ -1,0 +1,8 @@
+Model Information:
+* title:	Gatochan
+* source:	https://sketchfab.com/3d-models/gatochan-2650d5fd620548a1ba05721e2d6ee610
+* author:	chained_tan (https://sketchfab.com/ch_fren)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
