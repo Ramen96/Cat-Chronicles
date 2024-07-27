@@ -46,3 +46,10 @@
   align-items: start;
   justify-content: center;
 }
+
+.testCon {
+  width: 60%;
+  height: 60%;
+  border: solid red 10px;
+  background-color: white;
+}
