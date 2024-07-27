@@ -1,6 +1,5 @@
 import { gsap } from "gsap/dist/gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
-import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
 // import Nav from "../components/nav/nav";
@@ -15,13 +14,61 @@ import "../css/background.css";
 import "../css/assets.css";
 import "../css/button.css";
 
+import * as THREE from "three";
+import React, { useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+// export async function loader() {
+//   return json({
+//     ENV: {
+//       STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY,
+//       FAUNA_DB_URL: process.env.FAUNA_DB_URL,
+//     },
+//   });
+// }
+
+function Box(props) {
+  const meshRef = useRef();
+  const [hovered, setHovered] = useState(false);
+  const [active, setActive] = useState(false);
+  useFrame((state, delta) => (meshRef.current.rotation.x += delta));
+
+  return (
+    <mesh
+      {...props}
+      ref={meshRef}
+      scale={active ? 1.5 : 1}
+      onClick={(event) => setActive(true)}
+      onPointerOver={(event) => setHovered(true)}
+      onPointerOut={(event) => setHovered(false)}
+    >
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
+    </mesh>
+  );
+}
+
+export default function Index() {
+  return (
+    <Canvas>
+      <ambientLight intensity={Math.PI / 2} />
+      <spotLight
+        position={[10, 10, 10]}
+        angle={0.15}
+        penumbra={1}
+        decay={0}
+        intensity={Math.PI}
+      />
+      <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
+      <Box position={[-1.2, 0, 0]} />
+      <Box position={[1.2, 0, 0]} />
+    </Canvas>
+  );
+}
+
 // import * as THREE from "three";
 
 // gsap.registerPlugin(TextPlugin);
 
-export default function Index() {
-  return <h1>Hello World</h1>;
-}
 // export default function Index() {
 //   const scene = new THREE.Scene();
 // const camera = new THREE.PerspectiveCamera(
