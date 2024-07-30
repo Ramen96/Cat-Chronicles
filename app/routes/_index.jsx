@@ -6,6 +6,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { useGLTF } from "@react-three/fiber/drei";
 
 import Nav from "../components/nav/nav";
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
@@ -20,8 +21,24 @@ import "../css/assets.css";
 import "../css/button.css";
 
 function Scene() {
-  const gltf = useLoader(GLTFLoader, "app/assets/3D/cat/scene.gltf");
-  return <primitive object={gltf.scene} />;
+  const groupRef = useRef();
+  const { nodes, materials } = useGLTF("app/assets/3D/cat/scene.gltf");
+  return (
+    <group ref={groupRef} {...props} dispose={null}>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve007_1.geometry}
+        material={materials["Material.001"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve007_2.geometry}
+        material={materials["Material.002"]}
+      />
+    </group>
+  );
 }
 
 function Box(props) {
