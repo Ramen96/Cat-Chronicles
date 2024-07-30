@@ -4,6 +4,9 @@ import { useGSAP } from "@gsap/react";
 import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
+import { useLoader } from "@react-three/fiber";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+
 import Nav from "../components/nav/nav";
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
 import chaniBox from "../assets/chaniBox.jpg";
@@ -15,6 +18,11 @@ import "../css/text.css";
 import "../css/background.css";
 import "../css/assets.css";
 import "../css/button.css";
+
+function Scene() {
+  const gltf = useLoader(GLTFLoader, "app/assets/3D/cat/scene.gltf");
+  return <primitive object={gltf.scene} />;
+}
 
 function Box(props) {
   const meshRef = useRef();
@@ -71,6 +79,7 @@ export default function Index() {
                 />
                 <Box position={[-3.2, 0, 0]} />
                 <Box position={[3.2, 0, 0]} />
+                <Scene position={[0, 0, 0]} />
               </Canvas>
               <div className="chani1"></div>
               <div className="containerC">
