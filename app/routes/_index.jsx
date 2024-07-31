@@ -1,16 +1,17 @@
 import { gsap } from "gsap/dist/gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import { useGSAP } from "@gsap/react";
-import React, { useRef, useState } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useGLTF } from "@react-three/fiber/drei";
-
+import { useGLTF } from "@react-three/drei";
 import Nav from "../components/nav/nav";
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
 import chaniBox from "../assets/chaniBox.jpg";
+
+import cat3d from "../assets/3D/cat/scene.gltf";
 
 import "../root.css";
 import "../css/container.css";
@@ -21,24 +22,8 @@ import "../css/assets.css";
 import "../css/button.css";
 
 function Scene() {
-  const groupRef = useRef();
-  const { nodes, materials } = useGLTF("app/assets/3D/cat/scene.gltf");
-  return (
-    <group ref={groupRef} {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve007_1.geometry}
-        material={materials["Material.001"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve007_2.geometry}
-        material={materials["Material.002"]}
-      />
-    </group>
-  );
+  const model = useLoader(GLTFLoader, useGLTF(cat3d));
+  return <primitive object={result.scene} scale={1} position={[0, 0, 0]} />;
 }
 
 function Box(props) {
@@ -61,6 +46,7 @@ function Box(props) {
     </mesh>
   );
 }
+
 export default function Index() {
   const animatedText = useRef();
   useGSAP(() => {
@@ -96,7 +82,6 @@ export default function Index() {
                 />
                 <Box position={[-3.2, 0, 0]} />
                 <Box position={[3.2, 0, 0]} />
-                <Scene position={[0, 0, 0]} />
               </Canvas>
               <div className="chani1"></div>
               <div className="containerC">
