@@ -9,10 +9,9 @@ Title: cat
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
-import cat from "./cat.gltf";
 
-export default function Model(props) {
-  const { nodes, materials } = useGLTF(cat);
+export default function Cat(props) {
+  const { nodes, materials } = useGLTF("app/3DComponents/cat/cat.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
