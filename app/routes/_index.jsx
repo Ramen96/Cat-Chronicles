@@ -4,7 +4,7 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import { useGSAP } from "@gsap/react";
 import React, { Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 
 // Components
 import Nav from "../components/nav/nav";
@@ -23,6 +23,8 @@ import "../css/assets.css";
 import "../css/button.css";
 import { AmbientLight } from "three";
 
+const letThereBeLight = new AmbientLight();
+
 export default function Index() {
   return (
     <Canvas>
@@ -30,6 +32,7 @@ export default function Index() {
         <OrbitControls />
         <Cat />
       </Suspense>
+      <Environment preset="sunset" />
     </Canvas>
   );
 }
