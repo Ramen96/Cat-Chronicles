@@ -21,12 +21,13 @@ import "../css/text.css";
 import "../css/background.css";
 import "../css/assets.css";
 import "../css/button.css";
+import { AmbientLight } from "three";
 
 export default function Index() {
   return (
     <Canvas>
       <Suspense fallback={null}>
-        <ambientLight />
+        <OrbitControls />
         <Cat />
       </Suspense>
     </Canvas>
