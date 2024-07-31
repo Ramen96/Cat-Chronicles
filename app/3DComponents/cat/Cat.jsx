@@ -23,4 +23,4 @@ export default function Cat(props) {
   );
 }
 
-useGLTF.preload("/cat.gltf");
+useGLTF.preload("app/3DComponents/cat/cat.gltf");
