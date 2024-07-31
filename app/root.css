@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: #000000;
+  background-color: white;
   scroll-behavior: smooth;
   scrollbar-color: rgb(136, 136, 136) rgba(255, 166, 0, 0);
 }

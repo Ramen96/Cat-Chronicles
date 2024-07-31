@@ -26,6 +26,7 @@ export default function Index() {
   return (
     <Canvas>
       <Suspense fallback={null}>
+        <ambientLight />
         <Cat />
       </Suspense>
     </Canvas>
