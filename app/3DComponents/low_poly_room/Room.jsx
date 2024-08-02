@@ -10,7 +10,7 @@ Title: Low Poly Room
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Room101(props) {
+export default function Room101(props) {
   const { nodes, materials } = useGLTF(
     "app/3DComponents/low_poly_room/Room.jsx"
   );
