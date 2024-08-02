@@ -5,10 +5,13 @@ import { useGSAP } from "@gsap/react";
 import React, { Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
+import { AmbientLight } from "three";
 
 // Components
 import Nav from "../components/nav/nav";
 import Cat from "../3DComponents/cat/Cat.jsx";
+// import Room101 from "../3DComponents/low_poly_room/Room";
+import { CuteCat } from "../3DComponents/cute_cat/CuteCat.jsx";
 
 // Assets
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
@@ -21,19 +24,27 @@ import "../css/text.css";
 import "../css/background.css";
 import "../css/assets.css";
 import "../css/button.css";
-import { AmbientLight } from "three";
 
 const letThereBeLight = new AmbientLight();
 
 export default function Index() {
   return (
-    <Canvas>
-      <Suspense fallback={null}>
-        <OrbitControls />
-        <Cat />
-      </Suspense>
-      <Environment preset="sunset" />
-    </Canvas>
+    <>
+      <Canvas>
+        <Suspense fallback={null}>
+          <OrbitControls />
+          <Cat />
+        </Suspense>
+        <Environment preset="sunset" />
+      </Canvas>
+      <Canvas>
+        <Suspense fallback={null}>
+          <OrbitControls />
+          <Cat />
+        </Suspense>
+        <Environment preset="sunset" />
+      </Canvas>
+    </>
   );
 }
 
