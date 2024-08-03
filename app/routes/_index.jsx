@@ -14,6 +14,8 @@ import CuteCat from "../3DComponents/cute_cat/CuteCat.jsx";
 import Gatochan from "../3DComponents/gatochan/Gatochan.jsx";
 import LittleCat from "../3DComponents/little_cat/LittleCat.jsx";
 import Room101 from "../3DComponents/low_poly_room/Room.jsx";
+import Taurus from "../3DComponents/taurus/Taurus.jsx";
+import Pusheen from "../3DComponents/pusheen/Pusheen.jsx";
 
 // Assets
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
@@ -64,6 +66,20 @@ export default function Index() {
         <Suspense fallback={null}>
           <OrbitControls />
           <Room101 />
+        </Suspense>
+        <Environment preset="sunset" />
+      </Canvas>
+      <Canvas>
+        <Suspense fallback={null}>
+          <OrbitControls />
+          <Taurus />
+        </Suspense>
+        <Environment preset="sunset" />
+      </Canvas>
+      <Canvas>
+        <Suspense fallback={null}>
+          <OrbitControls />
+          <Pusheen />
         </Suspense>
         <Environment preset="sunset" />
       </Canvas>
