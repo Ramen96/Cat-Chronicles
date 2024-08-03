@@ -12,6 +12,7 @@ import Nav from "../components/nav/nav";
 import Cat from "../3DComponents/cat/Cat.jsx";
 import CuteCat from "../3DComponents/cute_cat/CuteCat.jsx";
 import Gatochan from "../3DComponents/gatochan/Gatochan.jsx";
+import LittleCat from "../3DComponents/little_cat/LittleCat.jsx";
 
 // Assets
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
@@ -48,6 +49,13 @@ export default function Index() {
         <Suspense fallback={null}>
           <OrbitControls />
           <Gatochan />
+        </Suspense>
+        <Environment preset="sunset" />
+      </Canvas>
+      <Canvas>
+        <Suspense fallback={null}>
+          <OrbitControls />
+          <LittleCat />
         </Suspense>
         <Environment preset="sunset" />
       </Canvas>
