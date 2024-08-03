@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Room101(props) {
   const { nodes, materials } = useGLTF(
-    "app/3DComponents/low_poly_room/Room.jsx"
+    "app/3DComponents/low_poly_room/room.gltf"
   );
   return (
     <group {...props} dispose={null}>
@@ -38,4 +38,4 @@ export default function Room101(props) {
   );
 }
 
-useGLTF.preload("app/3DComponents/low_poly_room/Room.jsx");
+useGLTF.preload("app/3DComponents/low_poly_room/room.gltf");

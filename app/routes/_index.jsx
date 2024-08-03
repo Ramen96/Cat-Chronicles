@@ -10,8 +10,8 @@ import { AmbientLight } from "three";
 // Components
 import Nav from "../components/nav/nav";
 import Cat from "../3DComponents/cat/Cat.jsx";
-// import Room101 from "../3DComponents/low_poly_room/Room";
-import { CuteCat } from "../3DComponents/cute_cat/CuteCat.jsx";
+import CuteCat from "../3DComponents/cute_cat/CuteCat.jsx";
+import Gatochan from "../3DComponents/gatochan/Gatochan.jsx";
 
 // Assets
 import chaniGrinch from "../assets/ChaniGrinch.jpg";
@@ -33,7 +33,7 @@ export default function Index() {
       <Canvas>
         <Suspense fallback={null}>
           <OrbitControls />
-          <Cat />
+          <CuteCat />
         </Suspense>
         <Environment preset="sunset" />
       </Canvas>
@@ -41,6 +41,13 @@ export default function Index() {
         <Suspense fallback={null}>
           <OrbitControls />
           <Cat />
+        </Suspense>
+        <Environment preset="sunset" />
+      </Canvas>
+      <Canvas>
+        <Suspense fallback={null}>
+          <OrbitControls />
+          <Gatochan />
         </Suspense>
         <Environment preset="sunset" />
       </Canvas>

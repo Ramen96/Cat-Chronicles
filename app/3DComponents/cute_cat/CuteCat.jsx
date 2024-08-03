@@ -11,7 +11,9 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function CuteCat(props) {
-  const { nodes, materials } = useGLTF("app/3DComponents/cute_cat/CuteCat.jsx");
+  const { nodes, materials } = useGLTF(
+    "app/3DComponents/cute_cat/cuteCat.gltf"
+  );
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -56,4 +58,4 @@ export default function CuteCat(props) {
   );
 }
 
-useGLTF.preload("app/3DComponents/cute_cat/CuteCat.jsx");
+useGLTF.preload("app/3DComponents/cute_cat/cuteCat.gltf");
