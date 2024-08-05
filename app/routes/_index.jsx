@@ -9,6 +9,7 @@ import { AmbientLight } from "three";
 
 // Components
 import Nav from "../components/nav/nav";
+import TextAnimation from "../components/textAnime/text.jsx";
 
 // 3D Components
 import Cat from "../3DComponents/cat/Cat.jsx";
@@ -32,29 +33,45 @@ import "../css/cuteCat.css";
 const letThereBeLight = new AmbientLight();
 
 export default function Index() {
-  const animatedText = useRef();
-  useGSAP(() => {
-    gsap.to(animatedText.current, {
-      duration: 3,
-      text: "Chani's Cosmic Chronicles: A Voyage of Feline Fun in the Final Frontier!",
-      delay: 0.5,
-      ease: "none",
-    });
-  });
-
   return (
-    <>
+    <div className="containerB bgImg">
       <Nav />
-      <div className="containerB conAPosition bgImg">
-        <p ref={animatedText} className="textA"></p>
-        <Canvas>
-          <Suspense fallback={null}>
-            <OrbitControls />
-            <CuteCat />
-            <ambientLight />
-          </Suspense>
-        </Canvas>
-      </div>
-    </>
+      <TextAnimation />
+      <Canvas>
+        <Suspense fallback={null}>
+          <OrbitControls />
+          <CuteCat />
+          <ambientLight />
+        </Suspense>
+      </Canvas>
+    </div>
   );
 }
+
+// export default function Index() {
+//   const animatedText = useRef();
+//   useGSAP(() => {
+//     gsap.to(animatedText.current, {
+//       duration: 3,
+//       text: "Chani's Cosmic Chronicles: A Voyage of Feline Fun in the Final Frontier!",
+//       delay: 0.5,
+//       ease: "none",
+//     });
+//   });
+
+//   return (
+//     <>
+//       <Nav />
+//       <div className="containerB conAPosition bgImg">
+//         <p ref={animatedText} className="textA"></p>
+//         <Canvas>
+//           <Suspense fallback={null}>
+//             <OrbitControls />
+//             <CuteCat />
+//             <ambientLight />
+//           </Suspense>
+//         </Canvas>
+//       </div>
+//     </>
+//   );
+// }
