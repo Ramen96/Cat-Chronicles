@@ -2,6 +2,7 @@ import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
 
 import { gsap } from "gsap/dist/gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
+
 import "./root.css";
 
 gsap.registerPlugin(TextPlugin);
