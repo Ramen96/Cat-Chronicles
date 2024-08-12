@@ -4,8 +4,13 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import { useGSAP } from "@gsap/react";
 import React, { Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import {
+  Environment,
+  OrbitControls,
+  PerspectiveCamera,
+} from "@react-three/drei";
 import { AmbientLight } from "three";
+import * as THREE from "three";
 
 // Components
 import Nav from "../components/nav/nav";
@@ -31,8 +36,6 @@ import "../css/button.css";
 import "../css/cuteCat.css";
 import { FlakesTexture } from "three/examples/jsm/Addons.js";
 
-const letThereBeLight = new AmbientLight();
-
 export default function Index() {
   return (
     <div className="containerB bgImg">
@@ -40,7 +43,13 @@ export default function Index() {
       <TextAnimation />
       <Canvas>
         <Suspense fallback={null}>
-          <OrbitControls enableZoom={false} autoRotate={true} zoom0={0.5} />
+          <PerspectiveCamera
+            makeDefault
+            position={[0, 0, 5]}
+            fov={75}
+            zoom={0.5}
+          />
+          <OrbitControls enableZoom={false} autoRotate={true} />
           <CuteCat />
           <ambientLight />
         </Suspense>
@@ -48,31 +57,3 @@ export default function Index() {
     </div>
   );
 }
-
-// export default function Index() {
-//   const animatedText = useRef();
-//   useGSAP(() => {
-//     gsap.to(animatedText.current, {
-//       duration: 3,
-//       text: "Chani's Cosmic Chronicles: A Voyage of Feline Fun in the Final Frontier!",
-//       delay: 0.5,
-//       ease: "none",
-//     });
-//   });
-
-//   return (
-//     <>
-//       <Nav />
-//       <div className="containerB conAPosition bgImg">
-//         <p ref={animatedText} className="textA"></p>
-//         <Canvas>
-//           <Suspense fallback={null}>
-//             <OrbitControls />
-//             <CuteCat />
-//             <ambientLight />
-//           </Suspense>
-//         </Canvas>
-//       </div>
-//     </>
-//   );
-// }

@@ -7,8 +7,8 @@ section {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: rgba(12, 12, 12, 0.37);
-  position: sticky;
-  top: 0;
+  position: sticky !important;
+  top: 0 !important;
   backdrop-filter: invert(100%);
   z-index: 9;
 }
