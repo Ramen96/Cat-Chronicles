@@ -7,6 +7,8 @@ body {
   background-color: #000000;
   scroll-behavior: smooth;
   scrollbar-color: rgb(136, 136, 136) rgba(255, 166, 0, 0);
+  background-image: url("../app/assets/space.avif");
+  background-size: 50%;
 }
 
 body {
@@ -15,7 +17,9 @@ body {
   justify-content: center;
 }
 
-/* canvas {
-  height: 150%;
+canvas {
+  height: 80% !important;
   width: auto;
-} */
+  position: absolute;
+  top: 15%;
+}

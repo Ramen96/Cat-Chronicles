@@ -29,6 +29,7 @@ import "../css/background.css";
 import "../css/assets.css";
 import "../css/button.css";
 import "../css/cuteCat.css";
+import { FlakesTexture } from "three/examples/jsm/Addons.js";
 
 const letThereBeLight = new AmbientLight();
 
@@ -39,7 +40,7 @@ export default function Index() {
       <TextAnimation />
       <Canvas>
         <Suspense fallback={null}>
-          <OrbitControls />
+          <OrbitControls enableZoom={false} autoRotate={true} zoom0={0.5} />
           <CuteCat />
           <ambientLight />
         </Suspense>
