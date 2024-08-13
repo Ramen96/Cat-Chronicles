@@ -37,18 +37,16 @@ import "../css/cuteCat.css";
 import { FlakesTexture } from "three/examples/jsm/Addons.js";
 
 export default function Index() {
-  function changePosition() {
-    // Create function that will return an array of 3 random and constently changing numbers
-    // This is to create a continuosly changing input for the position of the PerspectiveCamera
-    // TODO:
-    // 1) figure out min and max ranges
-  }
+  let change1 = 0;
+  let change2 = 0;
+
+  function changePosition() {}
 
   return (
     <div className="containerB bgImg">
       <Nav />
       <TextAnimation />
-      <Canvas>
+      <Canvas className="bouncing-object">
         <Suspense fallback={null}>
           <PerspectiveCamera
             makeDefault
